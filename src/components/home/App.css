@@ -1,0 +1,378 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+.three-columns{
+  display: grid;
+  grid-template-columns: 33% 33% 33%;
+}
+
+.Modal {
+  position:fixed;
+  background: white;
+  width: 50%;
+  height: auto;
+  top:50%;
+  left:50%;
+  transform: translate(-50%,-50%);
+}
+
+.display-block {
+  display: block;
+}
+
+.display-none {
+  display: none;
+}
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+@media (max-width: 1000px) {
+  .Header-logo {
+    width: 2000%;
+  }
+  .Menu-item {
+    font-size: 4vw;
+  }
+  .Menu-order {
+    font-size: 4vw;
+  }
+  .btn-primary{
+    font-size: 4vw;
+  }
+  .btn-popup{
+    font-size: 4vw;
+  }
+  #About-text{
+    font-size: 4vw;
+  }
+  .About{
+    grid-column: 1vw;
+  }
+  .two-columns{
+    grid-template-rows: 100vw 100vw;
+  }
+}
+@media (min-width: 1000px) {
+  .About{
+
+    grid-template-columns: 50% 50%;
+  }
+  .Header-logo{
+    width: 50%;
+  }
+  .blur {
+    filter: blur(1px);
+  }
+  .two-columns{
+    grid-template-columns: 50% 50%;
+
+  }
+  .Menu-item {
+    font-size: 2vw;
+  }
+  .Menu-order {
+    font-size: 2vw;
+  }
+}
+.Banner{
+  background: #7d6950;
+  height: 100px;
+}
+.Popup{
+  background: white;
+  height: 100px;
+
+}
+.Modal button{
+  position: absolute;
+  top: 0px;
+  right: 0px;
+}
+.Plain-p{
+  font-family: monospace;
+  font-size: 1vw;
+  color: black;
+}
+.header-callout {
+  font-family: Arial, Helvetica, sans-serif;
+  color: #f0e1aa;
+  font-size: 36px;
+  font-weight: bold;
+  line-height: 40px;
+}
+.popup-callout{
+  font-family: Arial, Helvetica, sans-serif;
+  color: #89711a;
+  font-size: 36px;
+  font-weight: bold;
+  line-height: 40px;
+}
+.btn-popup{
+  /* background: blue;
+  color:white;
+  border-color: blue;
+  color: #f0e1aa;
+  font-size: 24px;
+  font-family: 'Monospace', Times, serif; */
+  text-decoration: none;
+  font-weight: bold;
+  display: block;
+  box-shadow: 5px 5px 0px 0px rgba(181, 232, 169, 0.305);
+  font-family: Arial, Helvetica, sans-serif;
+  color: white;
+    border-radius: 0px;
+    -o-transition: all 0.4s ease;
+    transition: all 0.4s ease;
+    -webkit-transition: all 0.4s ease;
+    -moz-transition: all 0.4s ease;
+    -ms-transition: all 0.4s ease;
+    background:  #4CAF50;
+    border-color:  #4CAF50;
+    text-shadow: 2px 2px black;
+}
+.btn-primary {
+  /* background: #4CAF50;
+  color: #231f20;
+  border-color: #4CAF50;
+  font-family: 'Londrina Solid', cursive;
+  color: #f0e1aa; */
+  font-size: 24px;
+  text-decoration: none;
+  font-weight: bold;
+  /* float: left; */
+  /* width: 15%; */
+  /* padding: .5em;
+  display: block;
+  margin-block-start: .5em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px; */
+  /* box-shadow: 5px 5px 0px 0px rgba(181, 232, 169, 0.305); */
+  font-family: Arial, Helvetica, sans-serif;
+  color: white;
+    border-radius: 0px;
+    -o-transition: all 0.4s ease;
+    transition: all 0.4s ease;
+    -webkit-transition: all 0.4s ease;
+    -moz-transition: all 0.4s ease;
+    -ms-transition: all 0.4s ease;
+    background:  #4CAF50;
+    border-color:  #4CAF50;
+    text-shadow: 2px 2px black;
+}
+.text-center{
+  text-align: center;
+}
+.btn {
+  display: inline-block;
+  padding: 6px 12px;
+  margin-bottom: 0;
+  font-size: 24px;
+  font-weight: normal;
+  line-height: 1.42857143;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: middle;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  background-image: none;
+  border: 1px solid transparent;
+  border-radius: 4px;
+}
+.Phone{
+  font-size: 2vw;
+}
+.Float-left{
+  float: left;
+  margin-left: auto;
+}
+.Float-right{
+  float: right;
+  margin-left: .3vh;
+  padding-left: .1vh;
+}
+h1 {
+  font-size: 40px;
+  color: white;
+  text-shadow: 8px 8px black;
+}
+p{
+  font-size: 2vw;
+}
+.Menu-link{
+  background-color: #4CAF50; /* Green */
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+}
+.White{
+  color: white;
+}
+input[type=text], select, textarea {
+  width: 100%; /* Full width */
+  padding: 12px; /* Some padding */ 
+  border: 1px solid #ccc; /* Gray border */
+  border-radius: 4px; /* Rounded borders */
+  box-sizing: border-box; /* Make sure that padding and width stays in place */
+  margin-top: 6px; /* Add a top margin */
+  margin-bottom: 16px; /* Bottom margin */
+  resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
+}
+
+/* Style the submit button with a specific background color etc */
+input[type=submit] {
+  background-color: #4CAF50;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+/* When moving the mouse over the submit button, add a darker green color */
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+/* Add a background color and some padding around the form */
+.container {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+}
+.Menu-item {
+  float: left;
+  width: 16%;
+  color: white;
+  text-shadow: 4px 4px black;
+  padding: .5em;
+  display: block;
+  margin-block-start: .5em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  text-decoration: none;
+}
+.map-right{
+  text-align: center;
+}
+.two-columns{
+  display: grid;
+  height: 50vh;
+  margin-bottom: 75px;
+}
+.Menu-order {
+  font-weight: bold;
+  float: left;
+  width: 15%;
+  padding: .5em;
+  display: block;
+  margin-block-start: .5em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  box-shadow: 5px 5px 0px 0px rgba(181, 232, 169, 0.305);
+  color: white;
+    border-radius: 0px;
+    -o-transition: all 0.4s ease;
+    transition: all 0.4s ease;
+    -webkit-transition: all 0.4s ease;
+    -moz-transition: all 0.4s ease;
+    -ms-transition: all 0.4s ease;
+    background:  #4CAF50;
+    border-color:  #4CAF50;
+    text-shadow: 2px 2px black;
+}
+#About-text{
+  color:#bc906b;
+  text-shadow: 2px 2px black;
+}
+.About-left{
+  padding: 2-px;
+}
+.First-photo {
+  background-image: url("https://i.imgur.com/Uytz0JO.png");
+  background-size: cover;
+}
+.footer{
+  background-color: black;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+}
+.Header {
+  display: flex;
+  height: 250px;
+}
+.Header-social-media {
+  text-align: left;
+  width: 30%;
+  padding: 20px;
+}
+.Header-logo {
+  flex-grow: 1;
+  background-image: url("../../imgonline-com-ua-Transparent-background-kJMFDBcMcbbN.png");
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+.Header-contact {
+  flex-grow: 1;
+  padding: 20px;
+  text-align: right;
+}
+.Nav-bar {
+  margin: 0px;
+  padding: 10px;
+  display: inline-block;
+  width: 100%;
+  text-align: center;
+}
+.Cover {
+  height: 500px;
+  margin: 0px;
+  padding: 10px;
+}
+.About {
+  display: grid;
+  
+  
+}
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
