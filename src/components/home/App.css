@@ -6,9 +6,71 @@
   height: 40vmin;
   pointer-events: none;
 }
-.three-columns{
-  display: grid;
-  grid-template-columns: 33% 33% 33%;
+/* Position and sizing of burger button */
+.bm-burger-button {
+  position: absolute;
+  width: 3vw;
+  height: 3vw;
+  left: 5vw;
+  top: 13vw;
+}
+
+/* Color/shape of burger icon bars */
+.bm-burger-bars {
+  background: #373a47;
+}
+
+/* Color/shape of burger icon bars on hover*/
+.bm-burger-bars-hover {
+  background: #a90000;
+}
+
+/* Position and sizing of clickable cross button */
+/* .bm-cross-button {
+  height: 24px;
+  width: 24px;
+} */
+
+/* Color/shape of close button cross */
+/* .bm-cross {
+  background: #bdc3c7;
+} */
+
+/*
+Sidebar wrapper styles
+Note: Beware of modifying this element as it can break the animations - you should not need to touch it in most cases
+*/
+.bm-menu-wrap {
+  position: fixed;
+  height: 100vw;
+}
+
+/* General sidebar styles */
+.bm-menu {
+  background: #373a477a;
+  padding: 2.5em 1.5em 0;
+  font-size: 1.15em;
+}
+
+/* Morph shape necessary with bubble or elastic */
+.bm-morph-shape {
+  fill: #373a47;
+}
+
+/* Wrapper for item list */
+.bm-item-list {
+  color: #b8b7ad;
+  padding: 0.8em;
+}
+
+/* Individual item */
+.bm-item {
+  display: inline-block;
+}
+
+/* Styling of overlay */
+.bm-overlay {
+  background: rgba(0, 0, 0, 0.3);
 }
 
 .Modal {
@@ -24,9 +86,18 @@
 .display-block {
   display: block;
 }
-
+.three-columns{
+  background-color: black;
+  height: auto;
+}
 .display-none {
   display: none;
+}
+.Header-social-media {
+  display: grid;
+  text-align: left;
+  padding: 20px;
+
 }
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
@@ -34,14 +105,23 @@
   }
 }
 @media (max-width: 1000px) {
-  .Header-logo {
-    width: 2000%;
+  .Phone{
+    font-size: 2.5vw;
+  }
+  .about-text{
+    font-size: 4vw;
+  }
+  .three-columns{
+    display: grid;
+    grid-template-rows: 400px 400px 400px;
   }
   .Menu-item {
-    font-size: 4vw;
+    margin:auto;
+    font-size: 2.5vh;
   }
   .Menu-order {
-    font-size: 4vw;
+    margin:auto;
+    font-size: 2.5vh;
   }
   .btn-primary{
     font-size: 4vw;
@@ -50,7 +130,7 @@
     font-size: 4vw;
   }
   #About-text{
-    font-size: 4vw;
+    font-size: 6vw;
   }
   .About{
     grid-column: 1vw;
@@ -58,14 +138,34 @@
   .two-columns{
     grid-template-rows: 100vw 100vw;
   }
+  .Header-logo {
+    /*  */
+    
+  }
+  .black-bandaid{
+    background-color: black;
+    height: 15%;
+  }
 }
 @media (min-width: 1000px) {
+  .Header{
+    height: 50vh;
+  }
+  .Phone{
+    font-size: 2vw;
+  }
+  .about-text{
+    font-size: 2vw;
+  }
+
+  .three-columns{
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+    grid-template-rows: 400px;
+  }
   .About{
 
     grid-template-columns: 50% 50%;
-  }
-  .Header-logo{
-    width: 50%;
   }
   .blur {
     filter: blur(1px);
@@ -83,17 +183,24 @@
 }
 .Banner{
   background: #7d6950;
-  height: 100px;
+  height: auto;
 }
 .Popup{
   background: white;
   height: 100px;
 
 }
+.fb-page span{
+  height: 80%;
+}
 .Modal button{
   position: absolute;
   top: 0px;
   right: 0px;
+}
+facebook-feed{
+  display: flex;
+  align-items: center;
 }
 .Plain-p{
   font-family: monospace;
@@ -103,10 +210,11 @@
 .header-callout {
   font-family: Arial, Helvetica, sans-serif;
   color: #f0e1aa;
-  font-size: 36px;
+  font-size: 4vw;
   font-weight: bold;
   line-height: 40px;
 }
+/* // HOST=192.168.236.26 PORT=2000 */
 .popup-callout{
   font-family: Arial, Helvetica, sans-serif;
   color: #89711a;
@@ -137,13 +245,20 @@
     border-color:  #4CAF50;
     text-shadow: 2px 2px black;
 }
+#directions{
+  margin-top: 5%;
+  color: white;
+  text-shadow: 2px 2px black;
+  width: 100%;
+  background-color: #45a049;
+}
 .btn-primary {
   /* background: #4CAF50;
   color: #231f20;
   border-color: #4CAF50;
   font-family: 'Londrina Solid', cursive;
   color: #f0e1aa; */
-  font-size: 24px;
+  font-size: 2vw;
   text-decoration: none;
   font-weight: bold;
   /* float: left; */
@@ -169,6 +284,8 @@
 }
 .text-center{
   text-align: center;
+  margin-right: auto;
+  margin-left: auto;
 }
 .btn {
   display: inline-block;
@@ -189,9 +306,7 @@
   border: 1px solid transparent;
   border-radius: 4px;
 }
-.Phone{
-  font-size: 2vw;
-}
+
 .Float-left{
   float: left;
   margin-left: auto;
@@ -201,14 +316,12 @@
   margin-left: .3vh;
   padding-left: .1vh;
 }
-h1 {
-  font-size: 40px;
+.shadow-title {
+  font-size: 4vw;
   color: white;
   text-shadow: 8px 8px black;
 }
-p{
-  font-size: 2vw;
-}
+
 .Menu-link{
   background-color: #4CAF50; /* Green */
   border: none;
@@ -217,7 +330,8 @@ p{
   text-align: center;
   text-decoration: none;
   display: inline-block;
-  font-size: 16px;
+  font-size: 2vw;
+  font-weight: bold;
 }
 .White{
   color: white;
@@ -255,7 +369,6 @@ input[type=submit]:hover {
   padding: 20px;
 }
 .Menu-item {
-  float: left;
   width: 16%;
   color: white;
   text-shadow: 4px 4px black;
@@ -267,8 +380,17 @@ input[type=submit]:hover {
   margin-inline-end: 0px;
   text-decoration: none;
 }
+.map {
+  margin-left:5%;
+  margin-right: 5%;
+}
 .map-right{
   text-align: center;
+}
+.eighty-twenty{
+  display: grid;
+  grid-template-rows: 20% 80%;
+  margin-bottom: 3%;
 }
 .two-columns{
   display: grid;
@@ -278,9 +400,8 @@ input[type=submit]:hover {
 .Menu-order {
   font-weight: bold;
   float: left;
-  width: 15%;
+  width: 100%;
   padding: .5em;
-  display: block;
   margin-block-start: .5em;
   margin-block-end: 1em;
   margin-inline-start: 0px;
@@ -305,8 +426,9 @@ input[type=submit]:hover {
   padding: 2-px;
 }
 .First-photo {
-  background-image: url("https://i.imgur.com/Uytz0JO.png");
+  background-image: url("../../tasty-interior.jpg");
   background-size: cover;
+  height: auto;
 }
 .footer{
   background-color: black;
@@ -316,35 +438,31 @@ input[type=submit]:hover {
   width: 100%;
 }
 .Header {
-  display: flex;
-  height: 250px;
+  display: grid;
+  grid-template-columns: 20% 60% 20%;
 }
-.Header-social-media {
-  text-align: left;
-  width: 30%;
-  padding: 20px;
+.Header-Menu{
+  margin-top: 100%;
 }
 .Header-logo {
-  flex-grow: 1;
-  background-image: url("../../imgonline-com-ua-Transparent-background-kJMFDBcMcbbN.png");
+  display: grid;
+  /* background-image: url("../../tasty-interior.jpg"); */
   background-position: center;
   background-size: contain;
   background-repeat: no-repeat;
 }
 .Header-contact {
-  flex-grow: 1;
   padding: 20px;
   text-align: right;
 }
 .Nav-bar {
-  margin: 0px;
   padding: 10px;
   display: inline-block;
   width: 100%;
   text-align: center;
 }
 .Cover {
-  height: 500px;
+  height: auto;
   margin: 0px;
   padding: 10px;
 }
@@ -352,6 +470,12 @@ input[type=submit]:hover {
   display: grid;
   
   
+}
+.align-left{
+  text-align: left;
+}
+.contact-us{
+  margin-left: 20%;
 }
 .App-header {
   background-color: #282c34;
@@ -363,7 +487,9 @@ input[type=submit]:hover {
   font-size: calc(10px + 2vmin);
   color: white;
 }
-
+.white{
+  color: white;
+}
 .App-link {
   color: #61dafb;
 }
