@@ -141,7 +141,7 @@ class HomePage extends Component {
           <div className="About-right">
             <img
               width="100%"
-              src="https://cdn.pixabay.com/photo/2016/05/25/10/43/hamburger-1414422_960_720.jpg"
+              src="https://cdn.pixabay.com/photo/2020/01/17/23/14/pizza-4774206_960_720.jpg"
             ></img>
           </div>
         </div>
@@ -172,7 +172,7 @@ class HomePage extends Component {
               <Map
                 // add directions link
                 style="mapbox://styles/mapbox/streets-v8"
-                center={[-93.522996, 45.586754]}
+                center={[-93.34867386032482, 45.38637627492076 ]}
                 containerStyle={{
                   height: "80%",
                   width: "100%",
@@ -186,7 +186,7 @@ class HomePage extends Component {
                     "icon-color" : "red"
                 }}
                 >
-                  <Feature coordinates={[-93.522996, 45.586754]} />
+                  <Feature coordinates={[-93.34867386032482, 45.38637627492076]} />
                 </Layer>
                 <ZoomControl />
               </Map>
@@ -195,7 +195,7 @@ class HomePage extends Component {
     type="button"
     onClick={(e) => {
       e.preventDefault();
-      window.location.href="https://www.google.com/maps/dir//Shooters,+5584+MN-95,+Princeton,+MN+55371/@45.5868446,-93.525281,17z/data=!4m9!4m8!1m0!1m5!1m1!1s0x52b39f09b35095ef:0x8bb31db0b8b0f1f8!2m2!1d-93.5230923!2d45.5868446!3e0";
+      window.location.href="https://www.google.com/maps/dir//Tasty+Pizza,+3220,+8631,+Bridge+St+NW,+St+Francis,+MN+55070/@45.386478,-93.3492452,19z/data=!4m16!1m6!3m5!1s0x0:0x5dbb3b61dc3f6e99!2sTasty+Pizza!8m2!3d45.3863628!4d-93.3487118!4m8!1m0!1m5!1m1!1s0x52b310335e66a65f:0x5dbb3b61dc3f6e99!2m2!1d-93.3487118!2d45.3863628!3e2";
       }}
 > Directions</button>
             </div>
