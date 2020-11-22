@@ -1,5 +1,4 @@
 import { Component } from "react";
-import logo from "../../logo.svg";
 import "./App.css";
 import { SocialIcon } from "react-social-icons";
 import { AiOutlinePhone } from "react-icons/ai";
@@ -9,7 +8,12 @@ import "reactjs-popup/dist/index.css";
 import Button from "react-bootstrap/Button";
 import Modal from "react-bootstrap/Modal";
 import Form from "react-bootstrap/Form";
-import ReactMapboxGl, { Marker,ZoomControl, Layer, Feature } from "react-mapbox-gl";
+import ReactMapboxGl, {
+  Marker,
+  ZoomControl,
+  Layer,
+  Feature,
+} from "react-mapbox-gl";
 import "mapbox-gl/dist/mapbox-gl.css";
 import { FacebookProvider, Feed, Page } from "react-facebook";
 const Map = ReactMapboxGl({
@@ -69,9 +73,7 @@ class HomePage extends Component {
         </div>
         <div className="First-photo">
           <div className="Header">
-            <div className="Header-social-media">
-              <SocialIcon url="https://www.facebook.com/Shooters-121490991194526/" />
-            </div>
+            <div className="Header-social-media"></div>
             <div className="Header-logo">
               <a></a>
             </div>
@@ -88,7 +90,9 @@ class HomePage extends Component {
               <a className="Float-right White Phone" href="tel:763-631-7468">
                 (763) 631-7468
               </a>
-              <p className="Float-right White">3220  Bridge St NW, Saint Francis, MN</p>
+              <p className="Float-right White">
+                3220 Bridge St NW, Saint Francis, MN
+              </p>
             </div>
           </div>
 
@@ -102,7 +106,11 @@ class HomePage extends Component {
               {" "}
               About
             </a>
-            <a className="Menu-item" href="https://tastypizza.froogleonline.io/" download="Shooters Menu">
+            <a
+              className="Menu-item"
+              href="https://tastypizza.froogleonline.io/"
+              download="Shooters Menu"
+            >
               {" "}
               Menu
             </a>
@@ -132,10 +140,9 @@ class HomePage extends Component {
               Welcome to Tasty Pizza
             </h1>
             <p className="about-text">
-              Tasty Pizza is a Pizzeria located on highway 95, 4 miles west of
-              Princeton. Here at Shooters we value our hometown feel and
-              delicious food. Please come in and have a drink or try our home
-              cooked food. Enjoy!
+              Tasty Pizza is a Pizzeria located in St Francis. Here at Tasty Pizza
+              we value our hometown feel and delicious food. Please come in and
+              have a drink or try our home cooked pizza. Enjoy!
             </p>
           </div>{" "}
           <div className="About-right">
@@ -146,24 +153,6 @@ class HomePage extends Component {
           </div>
         </div>
         <div className="white three-columns">
-          <div className="eighty-twenty">
-            <div>
-              <h1>Our Facebook Feed</h1>
-            </div>
-            <div>
-              <FacebookProvider
-                className="facebook-feed"
-                appId="810535819790517"
-              >
-                <Page
-                  className="facebook-feed"
-                  href="facebook.com/pages/category/Sports-Bar/Shooters-121490991194526/"
-                  tabs="timeline"
-                  height="320px"
-                />
-              </FacebookProvider>{" "}
-            </div>
-          </div>
           <div className=" white eighty-twenty">
             <div>
               <h1>Find Us</h1>
@@ -172,7 +161,7 @@ class HomePage extends Component {
               <Map
                 // add directions link
                 style="mapbox://styles/mapbox/streets-v8"
-                center={[-93.34867386032482, 45.38637627492076 ]}
+                center={[-93.34867386032482, 45.38637627492076]}
                 containerStyle={{
                   height: "80%",
                   width: "100%",
@@ -182,22 +171,29 @@ class HomePage extends Component {
                   type="symbol"
                   id="marker"
                   layout={{ "icon-image": "marker-15", "icon-size": 1 }}
-                  paint={ {
-                    "icon-color" : "red"
-                }}
+                  paint={{
+                    "icon-color": "red",
+                  }}
                 >
-                  <Feature coordinates={[-93.34867386032482, 45.38637627492076]} />
+                  <Feature
+                    coordinates={[-93.34867386032482, 45.38637627492076]}
+                  />
                 </Layer>
                 <ZoomControl />
               </Map>
-              <button className="btn"
-              id="directions"
-    type="button"
-    onClick={(e) => {
-      e.preventDefault();
-      window.location.href="https://www.google.com/maps/dir//Tasty+Pizza,+3220,+8631,+Bridge+St+NW,+St+Francis,+MN+55070/@45.386478,-93.3492452,19z/data=!4m16!1m6!3m5!1s0x0:0x5dbb3b61dc3f6e99!2sTasty+Pizza!8m2!3d45.3863628!4d-93.3487118!4m8!1m0!1m5!1m1!1s0x52b310335e66a65f:0x5dbb3b61dc3f6e99!2m2!1d-93.3487118!2d45.3863628!3e2";
-      }}
-> Directions</button>
+              <button
+                className="btn"
+                id="directions"
+                type="button"
+                onClick={(e) => {
+                  e.preventDefault();
+                  window.location.href =
+                    "https://www.google.com/maps/dir//Tasty+Pizza,+3220,+8631,+Bridge+St+NW,+St+Francis,+MN+55070/@45.386478,-93.3492452,19z/data=!4m16!1m6!3m5!1s0x0:0x5dbb3b61dc3f6e99!2sTasty+Pizza!8m2!3d45.3863628!4d-93.3487118!4m8!1m0!1m5!1m1!1s0x52b310335e66a65f:0x5dbb3b61dc3f6e99!2m2!1d-93.3487118!2d45.3863628!3e2";
+                }}
+              >
+                {" "}
+                Directions
+              </button>
             </div>
           </div>
           <div className="white eighty-twenty">
@@ -206,18 +202,19 @@ class HomePage extends Component {
             </div>
             <div className="white align-left contact-us">
               <h2>Tasty Pizza</h2>
-              <h4>3220  Bridge St NW, Saint Francis</h4>
+              <h4>3220 Bridge St NW, Saint Francis</h4>
               <h4>Saint Francis, MN 55371</h4>
-              <h4>(763) 753-4988
-              <a className="Float-right White Phone" href="tel:763-753-4988"/>
-                </h4>
-            
+              <h4>
+                (763) 753-4988
+                <a
+                  className="Float-right White Phone"
+                  href="tel:763-753-4988"
+                />
+              </h4>
             </div>
           </div>
         </div>
-        <div className="black-bandaid">
-
-</div>
+        <div className="black-bandaid"></div>
       </div>
     );
   }

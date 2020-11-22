@@ -113,7 +113,7 @@ Note: Beware of modifying this element as it can break the animations - you shou
   }
   .three-columns{
     display: grid;
-    grid-template-rows: 400px 400px 400px;
+    grid-template-rows: 400px 400px;
   }
   .Menu-item {
     margin:auto;
@@ -373,7 +373,7 @@ input[type=submit]:hover {
   color: white;
   text-shadow: 4px 4px black;
   padding: .5em;
-  display: block;
+  float: left;
   margin-block-start: .5em;
   margin-block-end: 1em;
   margin-inline-start: 0px;
@@ -400,7 +400,7 @@ input[type=submit]:hover {
 .Menu-order {
   font-weight: bold;
   float: left;
-  width: 100%;
+  width: 20%;
   padding: .5em;
   margin-block-start: .5em;
   margin-block-end: 1em;
@@ -446,7 +446,7 @@ input[type=submit]:hover {
 }
 .Header-logo {
   display: grid;
-  /* background-image: url("../../tasty-interior.jpg"); */
+  background-image: url("../../Tasty-Pizza.png");
   background-position: center;
   background-size: contain;
   background-repeat: no-repeat;
@@ -457,9 +457,10 @@ input[type=submit]:hover {
 }
 .Nav-bar {
   padding: 10px;
-  display: inline-block;
+  display: flex;
   width: 100%;
   text-align: center;
+  height: 100%;
 }
 .Cover {
   height: auto;
