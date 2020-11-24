@@ -16,6 +16,7 @@ import ReactMapboxGl, {
 } from "react-mapbox-gl";
 import "mapbox-gl/dist/mapbox-gl.css";
 import { FacebookProvider, Feed, Page } from "react-facebook";
+import { slide as Menu } from 'react-burger-menu'
 const Map = ReactMapboxGl({
   accessToken:
     "pk.eyJ1IjoiaG9ybmVyMSIsImEiOiJja2dqYjF5ZjYwa2xrMnltbzZ1MXd1Z2NzIn0.tL4K0jThtP5QJzhkFt-WbQ",
@@ -57,7 +58,16 @@ class HomePage extends Component {
             </div>
           </Modal>
         </div>
+        <Menu width = "45%">
+        <a id="home" className="Menu-item" href="/">Home</a>
+        <a id="about" className="Menu-item" href="#About">About</a>
+        <a id="contact" className="Menu-item" href="#About">Contact</a>
+        <button     onClick={(e) => {
+      e.preventDefault();
+      window.location.href="https://shooters.froogleonline.io/";
+      }} id ="onlineorder" className="Menu-order">Order Online</button>
 
+      </Menu>
         <div className="Banner">
           <div className="header-callout text-center">
             Online Ordering Now Available!{" "}
@@ -97,7 +107,7 @@ class HomePage extends Component {
           </div>
 
           {/* add an order online in the top */}
-          <div className="Nav-bar">
+          {/* <div className="Nav-bar">
             <a className="Menu-item" href={process.env.PUBLIC_URL}>
               {" "}
               Home
@@ -119,7 +129,7 @@ class HomePage extends Component {
               Contact
             </a>{" "}
             <button className="Menu-order">Order Online</button>
-          </div>
+          </div> */}
           <div className="Cover">
             <h1 className="shadow-title">
               Great food, wonderful service, and fun atmosphere
@@ -153,6 +163,24 @@ class HomePage extends Component {
           </div>
         </div>
         <div className="white three-columns">
+        {/* <div className="eighty-twenty">
+            <div>
+              <h1>Our Facebook Feed</h1>
+            </div>
+            <div className="facebook-feed">
+              <FacebookProvider
+                className="facebook-feed"
+                appId="810535819790517"
+              >
+                <Page
+                  className="facebook-feed"
+                  href="facebook.com/pages/category/Sports-Bar/Shooters-121490991194526/"
+                  tabs="timeline"
+                  height="320px"
+                />
+              </FacebookProvider>{" "}
+            </div>
+          </div> */}
           <div className=" white eighty-twenty">
             <div>
               <h1>Find Us</h1>

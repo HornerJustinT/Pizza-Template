@@ -1,3 +1,4 @@
+
 .App {
   text-align: center;
 }
@@ -113,7 +114,7 @@ Note: Beware of modifying this element as it can break the animations - you shou
   }
   .three-columns{
     display: grid;
-    grid-template-rows: 400px 400px;
+    grid-template-rows: 400px 400px 400px;
   }
   .Menu-item {
     margin:auto;
@@ -373,7 +374,7 @@ input[type=submit]:hover {
   color: white;
   text-shadow: 4px 4px black;
   padding: .5em;
-  float: left;
+  display: block;
   margin-block-start: .5em;
   margin-block-end: 1em;
   margin-inline-start: 0px;
@@ -400,7 +401,7 @@ input[type=submit]:hover {
 .Menu-order {
   font-weight: bold;
   float: left;
-  width: 20%;
+  width: 100%;
   padding: .5em;
   margin-block-start: .5em;
   margin-block-end: 1em;
@@ -457,10 +458,9 @@ input[type=submit]:hover {
 }
 .Nav-bar {
   padding: 10px;
-  display: flex;
+  display: inline-block;
   width: 100%;
   text-align: center;
-  height: 100%;
 }
 .Cover {
   height: auto;
