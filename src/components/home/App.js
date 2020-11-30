@@ -23,7 +23,7 @@ const Map = ReactMapboxGl({
 });
 
 class HomePage extends Component {
-  state = { show: true };
+  state = { show: false };
 
   showModal = () => {
     this.setState({ show: true });
@@ -163,24 +163,15 @@ class HomePage extends Component {
           </div>
         </div>
         <div className="white three-columns">
-        {/* <div className="eighty-twenty">
+        <div className="eighty-twenty">
             <div>
-              <h1>Our Facebook Feed</h1>
+              <h1>Follow Us On Facebook!</h1>
             </div>
-            <div className="facebook-feed">
-              <FacebookProvider
-                className="facebook-feed"
-                appId="810535819790517"
-              >
-                <Page
-                  className="facebook-feed"
-                  href="facebook.com/pages/category/Sports-Bar/Shooters-121490991194526/"
-                  tabs="timeline"
-                  height="320px"
-                />
-              </FacebookProvider>{" "}
+            <div>
+            <SocialIcon url="https://m.facebook.com/profile.php?id=120258227985283" />
             </div>
-          </div> */}
+
+          </div>
           <div className=" white eighty-twenty">
             <div>
               <h1>Find Us</h1>
