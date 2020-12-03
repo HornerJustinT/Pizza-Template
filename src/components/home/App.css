@@ -134,7 +134,7 @@ Note: Beware of modifying this element as it can break the animations - you shou
     font-size: 6vw;
   }
   .About{
-    grid-column: 1vw;
+    grid-template-rows: auto 100%;
   }
   .two-columns{
     grid-template-rows: 100vw 100vw;
@@ -165,7 +165,7 @@ Note: Beware of modifying this element as it can break the animations - you shou
     grid-template-rows: 400px;
   }
   .About{
-
+    
     grid-template-columns: 50% 50%;
   }
   .blur {

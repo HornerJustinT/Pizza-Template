@@ -3,7 +3,7 @@ import "./App.css";
 import { SocialIcon } from "react-social-icons";
 import { AiOutlinePhone } from "react-icons/ai";
 import { IconContext } from "react-icons";
-// import menu from "../../shooters_menu.pdf";
+import tmenu from "../../Tasty_Menu.pdf";
 import "reactjs-popup/dist/index.css";
 import Button from "react-bootstrap/Button";
 import Modal from "react-bootstrap/Modal";
@@ -61,7 +61,7 @@ class HomePage extends Component {
         <Menu width = "45%">
         <a id="home" className="Menu-item" href="/">Home</a>
         <a id="about" className="Menu-item" href="#About">About</a>
-        <a id="contact" className="Menu-item" href="#About">Contact</a>
+        <a id="contact" className="Menu-item" href="#Contact">Contact</a>
         <button     onClick={(e) => {
       e.preventDefault();
       window.location.href="https://shooters.froogleonline.io/";
@@ -134,7 +134,7 @@ class HomePage extends Component {
             <h1 className="shadow-title">
               Great food, wonderful service, and fun atmosphere
             </h1>
-            <form action="https://tastypizza.froogleonline.io/">
+            <form action={tmenu} target="_blank">
               <input
                 className="Menu-link"
                 type="submit"
@@ -158,7 +158,7 @@ class HomePage extends Component {
           <div className="About-right">
             <img
               width="100%"
-              src="https://cdn.pixabay.com/photo/2020/01/17/23/14/pizza-4774206_960_720.jpg"
+              src="https://imgur.com/S7PkzXS.jpg "
             ></img>
           </div>
         </div>
@@ -217,6 +217,7 @@ class HomePage extends Component {
           </div>
           <div className="white eighty-twenty">
             <div>
+            <a name="Contact"></a>{" "}
               <h1>Contact Us</h1>
             </div>
             <div className="white align-left contact-us">
