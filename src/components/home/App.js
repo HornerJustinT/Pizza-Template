@@ -62,23 +62,15 @@ class HomePage extends Component {
         <a id="home" className="Menu-item" href="/">Home</a>
         <a id="about" className="Menu-item" href="#About">About</a>
         <a id="contact" className="Menu-item" href="#Contact">Contact</a>
-        <button     onClick={(e) => {
+        {/* <button     onClick={(e) => {
       e.preventDefault();
       window.location.href="https://shooters.froogleonline.io/";
-      }} id ="onlineorder" className="Menu-order">Order Online</button>
+      }} id ="onlineorder" className="Menu-order">Order Online</button> */}
 
       </Menu>
         <div className="Banner">
           <div className="header-callout text-center">
-            Online Ordering Now Available!{" "}
-            <a
-              href="https://tastypizza.froogleonline.io/"
-              target="_blank"
-              className="btn btn-primary btn-large"
-              rel="noopener noreferrer"
-            >
-              Order Online
-            </a>
+            Online Ordering Coming Soon!{" "}
           </div>
         </div>
         <div className="First-photo">

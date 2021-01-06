@@ -214,6 +214,7 @@ facebook-feed{
   font-size: 4vw;
   font-weight: bold;
   line-height: 40px;
+  padding: 10px;
 }
 /* // HOST=192.168.236.26 PORT=2000 */
 .popup-callout{
@@ -427,7 +428,7 @@ input[type=submit]:hover {
   padding: 2-px;
 }
 .First-photo {
-  background-image: url("../../tasty-interior.jpg");
+  background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url("../../tasty-interior-all.png");
   background-size: cover;
   height: auto;
 }
